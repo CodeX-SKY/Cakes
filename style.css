@@ -131,6 +131,14 @@ body {
   animation: add 0.3s linear;
 }
 
+.modal-hide {
+  animation: hide2 0.3s linear !important;
+}
+
+.modal-hide .box-modal {
+  animation: hide 0.3s linear !important;
+}
+
 .modal {
   display: none;
   justify-content: center;
@@ -145,9 +153,13 @@ body {
 .box-modal {
   position: relative;
   width: 60%;
-  padding: 60px 40px 40px;
+  padding: 35px;
   background-color: #fff;
   animation: add2 0.3s linear;
+}
+
+.m-tag {
+  width: 95%;
 }
 
 .x {
@@ -174,6 +186,24 @@ body {
 @keyframes add2 {
   0% {
     scale: 0;
+    opacity: 0;
+  }
+}
+@keyframes hide {
+  0% {
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    scale: 0;
+    opacity: 0;
+  }
+}
+@keyframes hide2 {
+  0% {
+    opacity: 1;
+  }
+  100% {
     opacity: 0;
   }
 }/*# sourceMappingURL=main.css.map */
