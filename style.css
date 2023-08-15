@@ -48,6 +48,7 @@ body {
   color: rgb(0, 0, 0);
   font-size: 10px;
   padding: 5px;
+  transition: all 0.3s linear;
 }
 
 .theme {
@@ -86,6 +87,7 @@ body {
   background-size: cover;
   background-position-x: center;
   padding: 6px;
+  transition: 0.3s linear;
 }
 
 .box-ll:nth-child(1) .img-box-xs {
@@ -124,6 +126,7 @@ body {
   justify-content: end;
   align-items: end;
   padding: 6px;
+  transition: all 0.3s linear;
 }
 
 .modal-add {
@@ -176,6 +179,23 @@ body {
 
 .x-icon {
   font-size: 18px;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.img-box-xs:hover , .img-box-x:hover {
+  scale: 1.2;
+  /* padding: 30px; */
+}
+
+.img-box-xs:hover .time {
+  transform: translateX(-15px) translateY(-25px);
+}
+
+.img-box-x:hover .time {
+  transform: translateX(-30px) translateY(-50px);
 }
 
 @keyframes add {
